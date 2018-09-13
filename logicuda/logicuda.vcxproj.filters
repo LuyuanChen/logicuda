@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{b7edf081-cca7-4d3b-92fe-af2c7ee5b8bd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="include\zlibwapi.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="numpy.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="tensor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h" />
+    <ClInclude Include="kernel.h" />
+    <ClInclude Include="helper_string.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="helper_cuda.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+</Project>
